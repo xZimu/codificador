@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador by xZimu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="logo">
+        <img src="imagenes/Vector1.5.png" alt="logo alura">
+        <title>Bienvenido a mi Encriptador</title>
+    </header>
+
+    <main>
+        <section class="cuadro-texto">
+            <textarea class= "ingrese-texto" cols="40" rows="10" placeholder="Ingrese su texto aqui"></textarea>
+            <h5 class=minusculas> ☑ solo letras minusculas y sin acentos</h5>
+            <div class="botones">
+                <button id="encriptar" onclick="buttonEncrip()">
+                    Encriptar
+                </button>
+                <button id="desencriptar" onclick="buttonDesencrip()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="cuadro-encriptado">
+            <textarea class="texto-encriptado" cols="30" rows="30"></textarea>
+            <button class= "copiar" onclick="copiarArea()">Copiar</button>
+        </section>
+        
+    </main>
+    <script src="scrypt.js"></script>
+    <footer>
+        by xZimu (Martin Nicolas Montenegro Curunao - Email: nicolas.montecuru@gmail.com)   
+    </footer>
+</body>
+</html>
